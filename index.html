@@ -76,7 +76,6 @@
         const d = new Date();
         const hour = d.getHours();
         const dayIdx = d.getDay();
-        // Basit bir saatlik gezegen döngüsü (Süleyman'ın usulüne göre özelleştirilebilir)
         state.gez = KBA_DATA.order[(dayIdx + hour) % 7];
         document.getElementById('clock').innerText = ⁠ Vakit: ${state.gez} Saati | ${KBA_DATA.planets[state.gez].esma} ⁠;
     }
